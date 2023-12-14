@@ -1,0 +1,28 @@
+.header{
+    text-align: center;
+    color: #363537;
+    font-size: 350%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.first_gif{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+.text_area{
+    border: solid 4px #8B939C;
+    width: 100%;
+    height: 400px;
+}
