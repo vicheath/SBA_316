@@ -50,13 +50,11 @@ var menuList = [
         var email = formElements['email'].value;
         var age = formElements['age'].value;
 
-        // Check if age is at least 16
         if (age < 16) {
             alert('You must be at least 16 years old to use this application.');
             return;
         }
 
-        // Display user information
         var output = 'Welcome, ' + firstName + ' ' + lastName + '!';
         output += '<br>Email: ' + email;
         output += '<br>Age: ' + age;
