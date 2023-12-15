@@ -1,8 +1,9 @@
-const body = document.querySelector("body");
-const mainEl = document.querySelector("main");
-const mainBgColor = getComputedStyle(body).getPropertyValue("--main-bg");
-mainEl.style.backgroundColor = mainBgColor;
+document.body.style.backgroundColor = "#765898";
 
+const topMenuEl = document.getElementById("menu_buttons_container");
+topMenuEl.style.height = "100%";
+topMenuEl.style.backgroundColor = "var(--top-menu-bg)";
+topMenuEl.classList.add("flex-around");
 
 var menuList = [
     { text: "EVA 01", url: "https://github.com/vicheath", color: "#52d053" },

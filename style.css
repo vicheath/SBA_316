@@ -4,4 +4,8 @@
     --sub-menu-bg: #000000;
   }
 
-
+  .flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
