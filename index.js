@@ -38,5 +38,38 @@ var menuList = [
 
    document.body.appendChild(navList);
 
-   
+   document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('myForm');
 
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var formElements = document.forms['myForm'].elements;
+        var firstName = formElements['fname'].value;
+        var lastName = formElements['lname'].value;
+        var email = formElements['email'].value;
+        var age = formElements['age'].value;
+
+        // Check if age is at least 16
+        if (age < 16) {
+            alert('You must be at least 16 years old to use this application.');
+            return;
+        }
+
+        // Display user information
+        var output = 'Welcome, ' + firstName + ' ' + lastName + '!';
+        output += '<br>Email: ' + email;
+        output += '<br>Age: ' + age;
+        document.querySelector('.text_area').innerHTML = output;
+    });
+});
+
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var firstName = document.getElementById('fname').value;
+    var lastName = document.getElementById('lname').value;
+    var email = document.getElementById('email').value;
+    var age = document.getElementById('age').value;
+    var userInfo = 'First Name: ' + firstName + ', Last Name: ' + lastName + ', Email: ' + email + ', Age: ' + age;
+    document.querySelector('.user_info').innerHTML = userInfo;
+});
