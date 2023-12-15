@@ -4,11 +4,11 @@ This JavaScript code provides functionality for a web page. It includes features
 
 ## Code Overview
 
-### 1. Set Background Color
 
 ```javascript
 // document.body.style.backgroundColor = "#765898";
 This line sets the background color of the entire page.
+
 
 // const topMenuEl = document.getElementById("menu_buttons_container");
 // topMenuEl.style.height = "100%";
