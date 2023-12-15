@@ -1,5 +1,8 @@
+const body = document.querySelector("body");
+const mainEl = document.querySelector("main");
+const mainBgColor = getComputedStyle(body).getPropertyValue("--main-bg");
+mainEl.style.backgroundColor = mainBgColor;
 
-document.body.style.backgroundColor = '#765898'
 
 var menuList = [
     { text: "EVA 01", url: "https://github.com/vicheath", color: "#52d053" },
